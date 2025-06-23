@@ -1,0 +1,16 @@
+{
+  "name": "typst_11ty_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "ESM",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.1"
+  }
+}
