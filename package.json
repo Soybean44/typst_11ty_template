@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "ESM",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.1",

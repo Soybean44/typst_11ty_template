@@ -6,6 +6,8 @@ export default async function(eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
 
   // Change server config since the javascript only runs on page reload
+  // This just makes development nicer since without it the svgs are really tiny
+  // on live reload update
   eleventyConfig.setServerOptions({
     liveReload: true,
     domDiff: false,
