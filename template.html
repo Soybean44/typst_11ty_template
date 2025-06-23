@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typst 11ty Test</title>
+  <style>
+    body {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #export {
+      width: 100%;
+      height: 20px;
+    }
+    #input {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-width: 0;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    // This snippet of code resizes the resulting 
+    const contentDiv = document.getElementById('content');
+    const svgElem = contentDiv.firstElementChild;
+
+    function resizeSVG() {
+      const width = Number.parseFloat(svgElem.getAttribute('width'));
+      const height = Number.parseFloat(svgElem.getAttribute('height'));
+      const cw = document.body.clientWidth - 40;
+      svgElem.setAttribute('width', cw);
+      svgElem.setAttribute('height', (height * cw) / width);
+    }
+
+    resizeSVG();
+  </script>
+</body>
+</html>
